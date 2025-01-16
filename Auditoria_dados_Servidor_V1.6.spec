@@ -1,18 +1,19 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
-a = Analysis(
-    ['Auditoria_dados_Servidor_V1.6.py'],
-    pathex=[],
-    binaries=[],
-    datas=[],
-    hiddenimports=['xlsxwriter', 'tkinter', 'pandas', 'tqdm'],
-    hookspath=[],
-    hooksconfig={},
-    runtime_hooks=[],
-    excludes=[],
-    noarchive=False,
-    optimize=0,
+a = Analysis(['Auditoria_dados_Servidor_V1.6.py'],
+             pathex=[],
+             binaries=[],
+             datas=[(r'C:\Users\Cliente2\AppData\Local\Programs\Python\Python38\Lib\tkinter', 'tkinter')],
+             hiddenimports=['xlsxwriter', 'tkinter', 'pandas', 'tqdm'],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=None,
+             noarchive=False,
+             optimize=0,
 )
 pyz = PYZ(a.pure)
 
