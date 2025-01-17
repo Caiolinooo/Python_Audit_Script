@@ -1,3 +1,17 @@
+"""
+Auditoria de Dados do Servidor
+Copyright (C) 2025 Caio Valerio Goulart Correia
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/agpl-3.0.html>
+"""
 ## Criado por Caio Valerio Goulart Correia
 ## O Intuito deste script é a auditoria de um servidor de arquivos para manutenção dos dados internos e controle de armazenamento.
 ## O mesmo possui GUI para seleçao das pastas e para armazenar a Planilha gerada.
