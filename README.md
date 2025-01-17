@@ -1,81 +1,78 @@
 # Auditoria de Dados do Servidor
 
-![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)
-![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
-![Status](https://img.shields.io/badge/status-production-green.svg)
-![Last Commit](https://img.shields.io/github/last-commit/Caiolinooo/auditoria-servidor)
-![Development](https://img.shields.io/badge/development-active-brightgreen)
+![Version](https://img.shields.io/badge/version-2.3-blue)
+![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen)
+![License](https://img.shields.io/badge/license-GNU%20AGPL%20v3-orange)
 
-> Uma ferramenta Python para auditoria automatizada de servidores de arquivos, com geração de relatórios detalhados em Excel.
+## 📋 Sobre
+Sistema avançado para auditoria de dados em servidores, oferecendo análise detalhada de arquivos, relatórios formatados e dashboard interativo para visualização de dados.
 
-## 📊 Métricas do Projeto
+## ✨ Principais Funcionalidades
+![Status](https://img.shields.io/badge/status-stable-green)
 
-graph TD
-A[Input] --> B[Processamento]
-B --> C[Output]
-B --> D[Análise de Arquivos]
-B --> E[Cálculo de Tamanho]
-D --> F[Relatório Excel]
-E --> F
+- 🔍 **Escaneamento Inteligente**
+  - Análise recursiva de diretórios
+  - Detecção automática de tipos de arquivo
+  - Hierarquia otimizada de pastas
 
-## ⚡ Funcionalidades Principais
+- 📊 **Análise Avançada**
+  - Cálculo preciso de tamanho de pastas
+  - Verificação de tipos específicos
+  - Detecção de data de criação
 
-- 📁 Análise recursiva de diretórios
-- 🔍 Verificação de arquivos específicos (.fls, .lsproj, .dwg, .imp, .rcp)
-- 📊 Geração de relatórios Excel formatados
-- 🎯 Interface gráfica para seleção de diretórios
-- 📈 Cálculo automático de espaço em disco
+- 🚀 **Performance**
+  - Processamento paralelo otimizado
+  - Sistema de cache inteligente
+  - Tratamento eficiente de grandes volumes
 
-## 🛠️ Tecnologias
+## 🛠️ Requisitos
+Python >= 3.8
+pandas
+xlsxwriter
+tqdm
+dash
+plotly
+text
 
-| Tecnologia | Versão | Propósito |
-|------------|---------|-----------|
-| Python | 3.6+ | Linguagem base |
-| Pandas | Latest | Manipulação de dados |
-| XlsxWriter | Latest | Geração de relatórios |
-| Tkinter | Built-in | Interface gráfica |
-| tqdm | Latest | Barras de progresso |
-
-## 📥 Instalação
-
-# Clone o repositório
-git clone https://github.com/seu-usuario/auditoria-servidor
-
-# Instale as dependências
+## 💻 Instalação
+Clone o repositório
+git clone [repository-url]
+Entre no diretório
+cd auditoria-servidor
+Instale as dependências
 pip install -r requirements.txt
+text
 
-## 🚀 Como Usar
+## 🎯 Como Usar
+python Auditoria_dados_Servidor_V2.3_Dashboard.py
+text
 
-# Execute o script
-python auditoria_servidor.py
+## 📊 Features do Dashboard
+- 📈 **Visualizações Interativas**
+  - Distribuição de espaço em disco
+  - Análise de tipos de arquivo
+  - Timeline de crescimento
 
-## 📋 Estrutura do Relatório
+- 🎚️ **Controles**
+  - Filtros dinâmicos por cliente
+  - Seleção múltipla de dados
+  - Informações totalizadas
 
-| Coluna | Descrição |
-|--------|-----------|
-| Cliente | Nome do diretório principal |
-| Data Criação | Data de criação da pasta |
-| Tamanho Total (GB) | Espaço utilizado |
-| Extensões | Verificação de .fls, .lsproj, .dwg, .imp, .rcp |
+## 🆕 Novidades da Versão 2.3
+![New](https://img.shields.io/badge/new-2.3-brightgreen)
+- ⚡ Performance otimizada no processamento
+- 🔄 Hierarquia melhorada de pastas
+- 🐛 Correção do ZeroDivisionError
+- 🎨 Interface do dashboard aprimorada
+- 📝 Logging UTF-8 implementado
+
+## 📄 Licença
+Este projeto está licenciado sob os termos da [GNU AGPL v3.0](LICENSE)
 
 ## 👨‍💻 Autor
+**Caio Valerio Goulart Correia**  
+Copyright © 2025
 
-Desenvolvido por Caio Valerio Goulart Correia
+---
+*Para mais informações, consulte a documentação completa ou abra uma issue.*
 
-## 📝 Licença
-
-"""
-Copyright (C) 2025 Caio Valerio Goulart Correia
-Este programa é licenciado sob os termos da GNU AGPL v3.0
-"""
-
-## 📈 Roadmap
-
-- [x] Implementação básica
-- [x] Interface gráfica
-- [x] Geração de relatórios
-- [x] Suporte a múltiplos formatos
-- [ ] Análise de permissões
-- [x] Dashboard interativo
-
-> 💡 **Dica**: Para melhor visualização, abra o relatório Excel gerado em tela cheia.
