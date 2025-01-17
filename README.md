@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
 ![Status](https://img.shields.io/badge/status-production-green.svg)
-![Last Commit](https://img.shields.io/github/last-commit/seu-usuario/auditoria-servidor)
+![Last Commit](https://img.shields.io/github/last-commit/Caiolinooo/auditoria-servidor)
 ![Development](https://img.shields.io/badge/development-active-brightgreen)
 
 > Uma ferramenta Python para auditoria automatizada de servidores de arquivos, com geração de relatórios detalhados em Excel.
