@@ -74,8 +74,8 @@ Este programa é licenciado sob os termos da GNU AGPL v3.0
 - [x] Implementação básica
 - [x] Interface gráfica
 - [x] Geração de relatórios
-- [ ] Suporte a múltiplos formatos
+- [x] Suporte a múltiplos formatos
 - [ ] Análise de permissões
-- [ ] Dashboard interativo
+- [x] Dashboard interativo
 
 > 💡 **Dica**: Para melhor visualização, abra o relatório Excel gerado em tela cheia.
