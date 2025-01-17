@@ -32,7 +32,7 @@ xlsxwriter
 tqdm
 dash
 plotly
-text
+
 
 ## 💻 Instalação
 Clone o repositório
@@ -41,11 +41,11 @@ Entre no diretório
 cd auditoria-servidor
 Instale as dependências
 pip install -r requirements.txt
-text
+
 
 ## 🎯 Como Usar
 python Auditoria_dados_Servidor_V2.3_Dashboard.py
-text
+
 
 ## 📊 Features do Dashboard
 - 📈 **Visualizações Interativas**
