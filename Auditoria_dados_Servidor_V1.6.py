@@ -1,5 +1,7 @@
 ## Criado por Caio Valerio Goulart Correia
 ## O Intuito deste script é a auditoria de um servidor de arquivos para manutenção dos dados internos e controle de armazenamento.
+## O mesmo possui GUI para seleçao das pastas e para armazenar a Planilha gerada.
+## E contabiliza as pastas dentro da que foi selecionada, informando o progresso e contabilizando tamanho, data de criação e gera um comentário para cada "Cliente e Sub-pasta do cliente" com o caminho para acesso.
 
 import os
 import subprocess
