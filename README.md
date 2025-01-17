@@ -11,12 +11,12 @@
 ## 📊 Métricas do Projeto
 
 graph TD
-    A[Input] --> B[Processamento]
-    B --> C[Output]
-    B --> D[Análise de Arquivos]
-    B --> E[Cálculo de Tamanho]
-    D --> F[Relatório Excel]
-    E --> F
+A[Input] --> B[Processamento]
+B --> C[Output]
+B --> D[Análise de Arquivos]
+B --> E[Cálculo de Tamanho]
+D --> F[Relatório Excel]
+E --> F
 
 ## ⚡ Funcionalidades Principais
 
