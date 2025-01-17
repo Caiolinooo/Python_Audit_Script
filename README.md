@@ -1,59 +1,62 @@
-![License](https://img.shields.io/badge/licimg.shields.io/badge/pyth](https://img.shields.io/badge/status-production-green.rosa para auditoria e análise de servidores de arquivos
-🚀 Funcionalidades
+Auditoria de Dados do Servidor
+License
+Python
+Status
+Last Commit
+Development
+Uma ferramenta Python para auditoria automatizada de servidores de arquivos, com geração de relatórios detalhados em Excel.
+📊 Métricas do Projeto
+text
+graph TD
+    A[Input] --> B[Processamento]
+    B --> C[Output]
+    B --> D[Análise de Arquivos]
+    B --> E[Cálculo de Tamanho]
+    D --> F[Relatório Excel]
+    E --> F
+⚡ Funcionalidades Principais
 📁 Análise recursiva de diretórios
-🔍 Verificação inteligente de arquivos (.fls, .lsproj, .dwg, .imp, .rcp)
-📊 Relatórios Excel com formatação profissional
-🎯 Interface gráfica intuitiva
+🔍 Verificação de arquivos específicos (.fls, .lsproj, .dwg, .imp, .rcp)
+📊 Geração de relatórios Excel formatados
+🎯 Interface gráfica para seleção de diretórios
 📈 Cálculo automático de espaço em disco
+🛠️ Tecnologias
+Tecnologia	Versão	Propósito
+Python	3.6+	Linguagem base
+Pandas	Latest	Manipulação de dados
+XlsxWriter	Latest	Geração de relatórios
+Tkinter	Built-in	Interface gráfica
+tqdm	Latest	Barras de progresso
+📥 Instalação
+bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/auditoria-servidor
 
-💻 Tecnologias Utilizadas
-import os
-import subprocess
-import sys
-import pandas as pd
-from xlsxwriter import Workbook
-from datetime import datetime
-import tkinter as tk
-from tkinter import filedialog
-from tqdm import tqdm
-
-📋 Pré-requisitos
-Biblioteca	Versão
-pandas	Última
-xlsxwriter	Última
-tkinter	Última
-tqdm	Última
-🎨 Formatação do Relatório
-O relatório gerado inclui:
-Cabeçalho: Fundo azul claro (#C5E1F5)
-Linhas principais: Fundo cinza claro (#F7F7F7)
-Subpastas: Fundo cinza médio (#E5E5E5)
-Bordas: Cinza (#B1B1B1)
-Comentários: Expansíveis com informações detalhadas
-🔧 Como Usar
-Execute o script
-Selecione a pasta para análise
-Escolha o local do relatório
-Aguarde o processamento com barra de progresso
-🔍 Exemplo de Implementação
-def verificar_arquivos(pasta):
-    arquivos_encontrados = {tipo: False for tipo in tipos_arquivos}
-    try:
-        for raiz, dirs, files in os.walk(pasta):
-            for file in files:
-                for tipo in tipos_arquivos:
-                    if file.endswith(tipo):
-                        arquivos_encontrados[tipo] = True
-    except PermissionError:
-        print(f"Acesso negado à pasta: {pasta}")
-    return arquivos_encontrados
-    
+# Instale as dependências
+pip install -r requirements.txt
+🚀 Como Usar
+python
+# Execute o script
+python auditoria_servidor.py
+📋 Estrutura do Relatório
+Coluna	Descrição
+Cliente	Nome do diretório principal
+Data Criação	Data de criação da pasta
+Tamanho Total (GB)	Espaço utilizado
+Extensões	Verificação de .fls, .lsproj, .dwg, .imp, .rcp
 👨‍💻 Autor
-Desenvolvido com 💙 por Caio Valerio Goulart Correia
+Desenvolvido por Caio Valerio Goulart Correia
 📝 Licença
 python
 """
 Copyright (C) 2025 Caio Valerio Goulart Correia
 Este programa é licenciado sob os termos da GNU AGPL v3.0
 """
+📈 Roadmap
+ Implementação básica
+ Interface gráfica
+ Geração de relatórios
+ Suporte a múltiplos formatos
+ Análise de permissões
+ Dashboard interativo
 💡 Dica: Para melhor visualização, abra o relatório Excel gerado em tela cheia.
