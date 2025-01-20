@@ -1,6 +1,6 @@
 # Auditoria de Dados do Servidor
 
-![Version](https://img.shields.io/badge/version-2.3-blue)
+![Version](https://img.shields.io/badge/version-2.4-blue)
 ![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen)
 ![License](https://img.shields.io/badge/license-GNU%20AGPL%20v3-orange)
 
@@ -60,7 +60,7 @@ python Auditoria_dados_Servidor_V2.4_Dashboard.py
   - Informações totalizadas
 
 ## 🆕 Novidades da Versão 2.4
-![New](https://img.shields.io/badge/new-2.3-brightgreen)
+![New](https://img.shields.io/badge/new-2.4-brightgreen)
 - ⚡ Performance otimizada no processamento
 - 🔄 Hierarquia melhorada de pastas
 - 🐛 Correção do ZeroDivisionError
