@@ -35,12 +35,13 @@ plotly
 
 
 ## 💻 Instalação
-Clone o repositório
-git clone [repository-url]
-Entre no diretório
-cd auditoria-servidor
-Instale as dependências
-pip install -r requirements.txt
+
+-> Clone o repositório
+-> git clone [repository-url]
+-> Entre no diretório
+-> cd auditoria-servidor
+-> Instale as dependências
+-> pip install -r requirements.txt
 
 
 ## 🎯 Como Usar
