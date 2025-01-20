@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 
 ## 🎯 Como Usar
-python Auditoria_dados_Servidor_V2.3_Dashboard.py
+python Auditoria_dados_Servidor_V2.4_Dashboard.py
 
 
 ## 📊 Features do Dashboard
@@ -58,13 +58,32 @@ python Auditoria_dados_Servidor_V2.3_Dashboard.py
   - Seleção múltipla de dados
   - Informações totalizadas
 
-## 🆕 Novidades da Versão 2.3
+## 🆕 Novidades da Versão 2.4
 ![New](https://img.shields.io/badge/new-2.3-brightgreen)
 - ⚡ Performance otimizada no processamento
 - 🔄 Hierarquia melhorada de pastas
 - 🐛 Correção do ZeroDivisionError
 - 🎨 Interface do dashboard aprimorada
 - 📝 Logging UTF-8 implementado
+
+## Changelog
+
+[2.4] - 2025-01-20
+Added
+Implementado salvamento do dashboard em arquivo HTML único
+Adicionado timestamp nos nomes dos arquivos gerados
+Implementado suporte UTF-8 para logs
+Adicionadas informações totais no dashboard estático
+Changed
+Otimizada hierarquia de pastas (raiz e subpastas diretas)
+Melhorada interface do dashboard
+Aprimorada formatação do relatório Excel
+Otimizado cálculo de tamanho das pastas
+Fixed
+Corrigido ZeroDivisionError no dashboard
+Corrigido bug de permissão de acesso
+Melhorado tratamento de erros
+Corrigida exibição de nomes das pastas
 
 ## 📄 Licença
 Este projeto está licenciado sob os termos da [GNU AGPL v3.0](LICENSE)
