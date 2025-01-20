@@ -69,7 +69,7 @@ python Auditoria_dados_Servidor_V2.4_Dashboard.py
 
 ## Changelog
 
-![New]**[2.4] - 2025-01-20**
+![New](https://img.shields.io/badge/new-2.4-brightgreen)**[2.4] - 2025-01-20**
 
 - Implementado salvamento do dashboard em arquivo HTML único
 - Adicionado timestamp nos nomes dos arquivos gerados
