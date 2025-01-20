@@ -1,0 +1,243 @@
+2025-01-17 15:13:07,841 - INFO - Iniciando auditoria de dados...
+2025-01-17 15:13:08,248 - INFO - Instalando: xlsxwriter
+2025-01-17 15:13:22,447 - INFO - Executando auditoria...
+2025-01-17 15:13:39,345 - INFO - Gerando relatório Excel...
+2025-01-17 15:13:39,403 - INFO - Relatório gerado com sucesso em C:/SCRIPT_DADOS_HD/Relatorios\Auditoria_Clientes.xlsx!
+2025-01-17 15:13:39,403 - INFO - Iniciando Dashboard...
+2025-01-17 15:13:39,414 - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-01-17 15:13:39,428 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://192.168.3.24:8050
+2025-01-17 15:13:39,428 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-17 15:13:47,356 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "GET / HTTP/1.1" 200 -
+2025-01-17 15:13:47,450 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "GET /_favicon.ico?v=2.18.2 HTTP/1.1" 200 -
+2025-01-17 15:13:47,457 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "GET /_dash-layout HTTP/1.1" 200 -
+2025-01-17 15:13:47,461 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-01-17 15:13:47,522 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "GET /_favicon.ico?v=2.18.2 HTTP/1.1" 200 -
+2025-01-17 15:13:47,525 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "[36mGET /_dash-component-suites/dash/dcc/async-dropdown.js HTTP/1.1[0m" 304 -
+2025-01-17 15:13:47,525 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "[36mGET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1[0m" 304 -
+2025-01-17 15:13:47,533 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "[36mGET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1[0m" 304 -
+2025-01-17 15:13:47,543 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1376, in dispatch
+    ctx.run(
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 507, in add_context
+    raise err
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 496, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\Desktop\Auditoria_dados_Servidor_V2.2_DashBoard.py", line 332, in atualizar_graficos
+    fig_tamanho = px.treemap(
+                  ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_chart_types.py", line 1738, in treemap
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 2119, in make_figure
+    args = process_dataframe_hierarchy(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1727, in process_dataframe_hierarchy
+    dfg = df.groupby(path[i:]).agg(agg_f)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 1432, in aggregate
+    result = op.agg()
+             ^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 190, in agg
+    return self.agg_dict_like()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 423, in agg_dict_like
+    return self.agg_or_apply_dict_like(op_name="agg")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 1608, in agg_or_apply_dict_like
+    result_index, result_data = self.compute_dict_like(
+                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 497, in compute_dict_like
+    getattr(obj._gotitem(key, ndim=1), op_name)(how, **kwargs)
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 294, in aggregate
+    return self._python_agg_general(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 327, in _python_agg_general
+    result = self._grouper.agg_series(obj, f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 864, in agg_series
+    result = self._aggregate_series_pure_python(obj, func)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 885, in _aggregate_series_pure_python
+    res = func(group)
+          ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 324, in <lambda>
+    f = lambda x: func(x, *args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1708, in aggfunc_continuous
+    return np.average(x, weights=df.loc[x.index, count_colname])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 565, in average
+    raise ZeroDivisionError(
+ZeroDivisionError: Weights sum to zero, can't be normalized
+2025-01-17 15:13:47,550 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-01-17 15:13:52,199 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1376, in dispatch
+    ctx.run(
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 507, in add_context
+    raise err
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 496, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\Desktop\Auditoria_dados_Servidor_V2.2_DashBoard.py", line 332, in atualizar_graficos
+    fig_tamanho = px.treemap(
+                  ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_chart_types.py", line 1738, in treemap
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 2119, in make_figure
+    args = process_dataframe_hierarchy(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1727, in process_dataframe_hierarchy
+    dfg = df.groupby(path[i:]).agg(agg_f)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 1432, in aggregate
+    result = op.agg()
+             ^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 190, in agg
+    return self.agg_dict_like()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 423, in agg_dict_like
+    return self.agg_or_apply_dict_like(op_name="agg")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 1608, in agg_or_apply_dict_like
+    result_index, result_data = self.compute_dict_like(
+                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 497, in compute_dict_like
+    getattr(obj._gotitem(key, ndim=1), op_name)(how, **kwargs)
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 294, in aggregate
+    return self._python_agg_general(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 327, in _python_agg_general
+    result = self._grouper.agg_series(obj, f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 864, in agg_series
+    result = self._aggregate_series_pure_python(obj, func)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 885, in _aggregate_series_pure_python
+    res = func(group)
+          ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 324, in <lambda>
+    f = lambda x: func(x, *args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1708, in aggfunc_continuous
+    return np.average(x, weights=df.loc[x.index, count_colname])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 565, in average
+    raise ZeroDivisionError(
+ZeroDivisionError: Weights sum to zero, can't be normalized
+2025-01-17 15:13:52,202 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:52] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-01-17 15:13:53,154 - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\dash.py", line 1376, in dispatch
+    ctx.run(
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 507, in add_context
+    raise err
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 496, in add_context
+    output_value = _invoke_callback(func, *func_args, **func_kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\dash\_callback.py", line 43, in _invoke_callback
+    return func(*args, **kwargs)  # %% callback invoked %%
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\Desktop\Auditoria_dados_Servidor_V2.2_DashBoard.py", line 332, in atualizar_graficos
+    fig_tamanho = px.treemap(
+                  ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_chart_types.py", line 1738, in treemap
+    return make_figure(
+           ^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 2119, in make_figure
+    args = process_dataframe_hierarchy(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1727, in process_dataframe_hierarchy
+    dfg = df.groupby(path[i:]).agg(agg_f)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 1432, in aggregate
+    result = op.agg()
+             ^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 190, in agg
+    return self.agg_dict_like()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 423, in agg_dict_like
+    return self.agg_or_apply_dict_like(op_name="agg")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 1608, in agg_or_apply_dict_like
+    result_index, result_data = self.compute_dict_like(
+                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\apply.py", line 497, in compute_dict_like
+    getattr(obj._gotitem(key, ndim=1), op_name)(how, **kwargs)
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 294, in aggregate
+    return self._python_agg_general(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 327, in _python_agg_general
+    result = self._grouper.agg_series(obj, f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 864, in agg_series
+    result = self._aggregate_series_pure_python(obj, func)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\ops.py", line 885, in _aggregate_series_pure_python
+    res = func(group)
+          ^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\groupby\generic.py", line 324, in <lambda>
+    f = lambda x: func(x, *args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\plotly\express\_core.py", line 1708, in aggfunc_continuous
+    return np.average(x, weights=df.loc[x.index, count_colname])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brtserver\AppData\Local\Programs\Python\Python312\Lib\site-packages\numpy\lib\_function_base_impl.py", line 565, in average
+    raise ZeroDivisionError(
+ZeroDivisionError: Weights sum to zero, can't be normalized
+2025-01-17 15:13:53,157 - INFO - 192.168.3.44 - - [17/Jan/2025 15:13:53] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-01-17 15:28:31,243 - INFO - Iniciando auditoria de dados...
+2025-01-17 15:28:31,668 - INFO - Instalando: xlsxwriter
+2025-01-17 15:46:27,143 - INFO - Iniciando auditoria de dados...
+2025-01-17 15:46:27,143 - ERROR - Erro durante a execuÃ§Ã£o: 'AuditoriaServidor' object has no attribute 'instalar_dependencias'
+2025-01-17 15:53:36,694 - INFO - Iniciando auditoria de dados...
+2025-01-20 09:32:05,146 - INFO - Iniciando auditoria de dados...
